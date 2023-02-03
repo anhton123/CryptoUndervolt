@@ -4,6 +4,7 @@
 # Example: ./aes_encrypt.sh aes_u0_t60_1.txt 60
 
 
+
 echo "Stress Test turned on...."
 
 # Runs stress test until CPU temp is less than or equal to $2

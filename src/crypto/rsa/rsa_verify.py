@@ -28,7 +28,7 @@ import csv
 parse = sys.argv[1].strip(".txt").split("_")
 undervolt_level = parse[1][1:]
 temperature = parse[2][1:]
-NUM_OF_ITERATIONS = 1000
+NUM_OF_ITERATIONS = 10
 
 # Stores contents of original plaintext in variable f1
 f_expected = open("rsa_data.txt", 'r')
@@ -36,7 +36,7 @@ f1 = f_expected.readlines()
 f_expected.close()
 
 # Stores contents of experimental rsa cipher in variable f2
-f_experimental = open("../../../data/benchmark/rsa/{}".format(sys.argv[1]), 'r')
+f_experimental = open("../../../data/crypto/rsa/{}".format(sys.argv[1]), 'r')
 f2 = f_experimental.readlines()
 f_experimental.close()
 

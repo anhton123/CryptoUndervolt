@@ -34,7 +34,7 @@ x = f_expected.readlines()
 f_expected.close()
 
 # Stores contents of experimental experimental digests in variable y
-f_actual = open("../../../data/benchmark/sha256/{}".format(sys.argv[1]), 'r')
+f_actual = open("../../../data/crypto/sha256/{}".format(sys.argv[1]), 'r')
 y = f_actual.readlines()
 f_actual.close()
 

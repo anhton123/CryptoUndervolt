@@ -3,15 +3,15 @@ Name:
     mul_verify.py
 
 Description:
-    This file reads in 32 bit operands from <x>.txt, finds the multiplication of 
+    This file reads in 32 bit operands from operand.txt, finds the multiplication of 
     those operands, and then compares that value with the experimental multiplcations
     of those operands to <y>.txt.
 
 Usage:
-    python mul_verify.py <x>.txt <y>.txt
+    python mul_verify.py <y>.txt
 
 Example:
-    python mul_verify.py mul_op_u0_t50_1.txt mul_bench_u0_t50_1.txt
+    python mul_verify.py mul_bench_u0_t50_1.txt
 '''
 
 import sys
@@ -24,12 +24,12 @@ undervolt_level = parse[2][1:]
 temperature = parse[3][1:]
 
 # reads in the 32 bit random operands
-f_in1 = open("../../data/multiplication/{}".format(sys.argv[1]),'r')
+f_in1 = open("operand.txt",'r')
 data = f_in1.readlines()
 f_in1.close()
 
 # reads in the experimental multiplication values
-f_in2 = open("../../data/multiplication/{}".format(sys.argv[2]), 'r')
+f_in2 = open("../../data/multiplication/{}".format(sys.argv[1]), 'r')
 exper = f_in2.readlines()
 f_in2.close()
 

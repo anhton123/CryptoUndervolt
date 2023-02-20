@@ -24,7 +24,7 @@ from Crypto.Cipher import PKCS1_OAEP
 import ast
 import sys
 
-NUM_OF_ITERATIONS = 1000
+NUM_OF_ITERATIONS = 10
 
 # Reads plaintext from the "rsa_data.txt" file
 f_in = open("rsa_data.txt", 'r')
@@ -32,7 +32,7 @@ lines = f_in.readlines()
 f_in.close()
 
 # Encrypts data with public key
-f_out = open("../../../data/benchmark/rsa/{}".format(sys.argv[1]), 'a')
+f_out = open("../../../data/crypto/rsa/{}".format(sys.argv[1]), 'a')
 keyIndex = 1
 for line in lines:
     for i in range(NUM_OF_ITERATIONS):

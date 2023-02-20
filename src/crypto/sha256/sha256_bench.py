@@ -31,7 +31,7 @@ lines = f_in.readlines()
 f_in.close()
 
 # Writes the experimental digest to <t>.txt 
-f_out = open("../../../data/benchmark/sha256/{}".format(sys.argv[1]), 'a')
+f_out = open("../../../data/crypto/sha256/{}".format(sys.argv[1]), 'a')
 for line in lines:
     for i in range(NUM_OF_ITERATIONS):
         h = SHA256.new()

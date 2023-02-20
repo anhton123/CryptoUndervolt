@@ -37,7 +37,7 @@ x = f_expected.readlines()
 f_expected.close()
 
 # Stores contents ciphertext, tag, and nonce from the <t>.txt file in variable y
-f_actual = open("../../../data/benchmark/aes/{}".format(sys.argv[1]), 'r')
+f_actual = open("../../../data/crypto/aes/{}".format(sys.argv[1]), 'r')
 y = f_actual.readlines()
 f_actual.close()
 

@@ -18,7 +18,7 @@ import sys
 
 NUM_OF_MULTIPLICATIONS = 1000000
 
-f_out = open("../../data/multiplication/{}".format(sys.argv[1]),'a')
+f_out = open("operand.txt",'a')
 for i in range(NUM_OF_MULTIPLICATIONS):
     x = random.randbytes(4)
     y = random.randbytes(4)
